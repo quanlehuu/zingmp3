@@ -1,0 +1,839 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Zing Mp3</title>
+    <link
+      rel="shortcut icon"
+      href="https://zjs.zadn.vn/zmp3-desktop/releases/v1.4.9/static/media/icon_zing_mp3_60.f6b51045.svg"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <div class="main-left">
+        <div class="logo">
+          <img src="./image/logo.svg" alt="" />
+        </div>
+        <div class="list-menu">
+          <ul class="menu">
+            <li class="menu-item active">
+              <span class="material-icons-outlined"> library_music </span>
+              <a class="menu-link" href="#">Cá nhân</a>
+            </li>
+            <li class="menu-item">
+              <span class="material-icons-outlined"> album </span>
+              <a class="menu-link" href="#">Khám phá</a>
+            </li>
+            <li class="menu-item">
+              <span class="material-icons-outlined"> insights </span>
+              <a class="menu-link" href="#">#Zingchart</a>
+            </li>
+            <li class="menu-item">
+              <span class="material-icons-outlined"> radio </span>
+              <a class="menu-link" href="#">Radio</a>
+              <i class="live">Live</i>
+            </li>
+            <li class="menu-item">
+              <span class="material-icons-outlined"> assignment </span>
+              <a class="menu-link" href="#">Theo dõi</a>
+            </li>
+            <li class="menu-hr"></li>
+          </ul>
+          <div class="list-scroll">
+            <ul class="menu">
+              <li class="menu-item">
+                <span class="material-icons-outlined"> music_note </span>
+                <a class="menu-link" href="#">Nhạc mới</a>
+              </li>
+              <li class="menu-item">
+                <span class="material-icons-outlined"> category </span>
+                <a class="menu-link" href="#">Thể Loại</a>
+              </li>
+              <li class="menu-item">
+                <span class="material-icons-outlined"> star_border </span>
+                <a class="menu-link" href="#">Top 100</a>
+              </li>
+              <li class="menu-item">
+                <span class="material-icons-outlined"> music_video </span>
+                <a class="menu-link" href="#">MV</a>
+              </li>
+            </ul>
+            <div class="update-vip">
+              <p>Nghe nhạc không quảng cáo cùng kho nhạc VIP</p>
+              <button class="btn-vip">Nâng cấp Vip</button>
+            </div>
+            <div class="library">
+              <p>THƯ VIỆN</p>
+              <ul class="library-menu">
+                <li class="library-item">
+                  <span><img src="./image/my-song.svg" alt="" /></span>
+                  <a href="#">Bài hát</a>
+                </li>
+                <li class="library-item">
+                  <span><img src="./image/listplay.svg" alt="" /></span>
+                  <a href="#">Playlist</a>
+                </li>
+                <li class="library-item">
+                  <span><img src="./image/my-history.svg" alt="" /></span>
+                  <a href="#">Gần đây</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <a class="create-link" href="#">
+          <div class="create-playlist">
+            <div class="playlist-icon">
+              <span class="material-icons-outlined"> add </span>
+            </div>
+            <div class="playlist-create">Tạo Playlist Mới</div>
+          </div>
+        </a>
+      </div>
+      <div class="mp3-header">
+        <div class="header-left">
+          <div class="continue-icon">
+            <span class="material-icons-outlined active"> arrow_back </span>
+            <span class="material-icons-outlined"> arrow_forward </span>
+          </div>
+          <div class="search-item">
+            <span class="material-icons-outlined"> search </span>
+            <input
+              class="search"
+              type="text"
+              placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV..."
+            />
+          </div>
+        </div>
+        <div class="header-right">
+          <div class="setting-item">👕</div>
+          <div class="setting-item">
+            <label for="upload-photo"
+              ><span class="material-icons-outlined"> file_upload </span></label
+            >
+            <input type="file" name="photo" id="upload-photo" />
+          </div>
+          <div class="setting-item">
+            <span class="material-icons-outlined"> settings </span>
+          </div>
+          <div class="setting-item">
+            <img
+              src="https://s120-ava-talk.zadn.vn/b/1/6/7/14/120/b49f80251e6ec746c379b629c357177a.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="main-right">
+        <div class="content">
+          <div class="header-user">
+            <div class="header-user-item">
+              <div class="avtar-user">
+                <div class="avatar">
+                  <img
+                    src="https://s120-ava-talk.zadn.vn/b/1/6/7/14/120/b49f80251e6ec746c379b629c357177a.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="service-vip">
+                <div class="vip-update">
+                  <a href="#">NÂNG CẤP VIP</a>
+                </div>
+                <div class="import-vip">
+                  <a href="#">NHẬP CODE VIP</a>
+                </div>
+                <div class="log-out">
+                  <a href="#"
+                    ><span class="material-icons-outlined">
+                      more_horiz
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-user-name">
+            <h1>Lê Hữu Quân</h1>
+          </div>
+          <div class="tabs-music">
+            <div class="tabs" onclick="openTabs('content1')">
+              <div class="tabs-link active">Tổng quan</div>
+            </div>
+            <div class="tabs" onclick="openTabs('content2')">
+              <div class="tabs-link">Bài hát</div>
+            </div>
+            <div class="tabs">
+              <div class="tabs-link">Playlist</div>
+            </div>
+            <div class="tabs" id="tabs">
+              <div class="tabs-link">Nghệ sĩ</div>
+            </div>
+            <div class="tabs"><div class="tabs-link">Album</div></div>
+            <div id="tabs" class="tabs"><div class="tabs-link">MV</div></div>
+            <div id="tabs" class="tabs">
+              <div class="tabs-link">Tải lên</div>
+            </div>
+          </div>
+          <div class="content-item" id="content1">
+            <div class="advertisement">
+              <img src="./image/lazada.png" alt="" />
+            </div>
+            <div class="main-content">
+              <div class="mymusic-song">
+                <div class="mymusic-header">
+                  <h2>
+                    Bài hát<span class="material-icons-outlined">
+                      arrow_forward_ios
+                    </span>
+                  </h2>
+                  <div class="function-music">
+                    <!-- <div class="upload-music">
+                      <label class="upload" for="upload-photo">
+                        <span class="material-icons-outlined"> upload </span>Tải
+                        lên
+                        <input type="file" name="photo" id="upload-photo" />
+                      </label>
+                    </div> -->
+                    <div class="playall-music">
+                      <span class="material-icons-outlined"> play_arrow </span
+                      >Phát tất cả
+                    </div>
+                  </div>
+                </div>
+                <div class="my-song">
+                  <div class="song-animation">
+                    <video controls>
+                      <source
+                        src="./video/SƠN TÙNG M-TP - HÃY TRAO CHO ANH ft. Snoop Dogg - Official MV.mp4"
+                      />
+                    </video>
+                  </div>
+                  <div class="song-list">
+                    <div class="song-list-scroll">
+                      <ul class="song-menu"></ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="mymusic-playlist">
+                  <h2>
+                    Playlist<span class="material-icons-outlined">
+                      arrow_forward_ios
+                    </span>
+                  </h2>
+                  <div class="function-music"></div>
+                </div>
+                <div class="my-playlist">
+                  <div class="playlist-item create">
+                    <div class="add-new">
+                      <span class="material-icons-outlined"> add </span>
+                      <p>Tạo playlist mới</p>
+                    </div>
+                  </div>
+                  <div class="playlist-item">
+                    <div class="playlist-item-avatar">
+                      <div class="playlist-item-icon">
+                        <span class="material-icons-outlined"> clear </span>
+                        <span class="material-icons-outlined" id="play-icon">
+                          play_circle_outline
+                        </span>
+                        <span class="material-icons-outlined">
+                          more_horiz
+                        </span>
+                      </div>
+                      <img src="./image/soobin.jpg" alt="" />
+                    </div>
+                    <div class="info-playlist">
+                      <h3>Nhạc Soobin Hoàng Sơn</h3>
+                      <p>#zing mp3</p>
+                    </div>
+                  </div>
+                  <div class="playlist-item">
+                    <div class="playlist-item-avatar">
+                      <div class="playlist-item-icon">
+                        <span class="material-icons-outlined"> clear </span>
+                        <span class="material-icons-outlined" id="play-icon">
+                          play_circle_outline
+                        </span>
+                        <span class="material-icons-outlined">
+                          more_horiz
+                        </span>
+                      </div>
+                      <img src="./image/binz.jpg" alt="" />
+                    </div>
+                    <div class="info-playlist">
+                      <h3>Nhạc Binz</h3>
+                      <p>Binz music</p>
+                    </div>
+                  </div>
+                  <div class="playlist-item" id="playlist-item">
+                    <div class="playlist-item-avatar">
+                      <div class="playlist-item-icon">
+                        <span class="material-icons-outlined"> clear </span>
+                        <span class="material-icons-outlined" id="play-icon">
+                          play_circle_outline
+                        </span>
+                        <span class="material-icons-outlined">
+                          more_horiz
+                        </span>
+                      </div>
+                      <img src="./image/stmtp.jpg" alt="" />
+                    </div>
+                    <div class="info-playlist">
+                      <h3>Nhạc Sơn Tùng MTP</h3>
+                      <p>Fan MTP</p>
+                    </div>
+                  </div>
+                  <div class="playlist-item">
+                    <div class="playlist-item-avatar">
+                      <div class="playlist-item-icon">
+                        <span class="material-icons-outlined"> clear </span>
+                        <span class="material-icons-outlined" id="play-icon">
+                          play_circle_outline
+                        </span>
+                        <span class="material-icons-outlined">
+                          more_horiz
+                        </span>
+                      </div>
+                      <img src="./image/pmq.jpg" alt="" />
+                    </div>
+                    <div class="info-playlist">
+                      <h3>Nhạc Phan Mạnh Quỳnh</h3>
+                      <p>#zing mp3</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mymusic-mv">
+                  <h2>
+                    MV<span class="material-icons-outlined">
+                      arrow_forward_ios
+                    </span>
+                  </h2>
+                  <div class="function-music"></div>
+                </div>
+                <div class="my-mv">
+                  <div class="mv-item">
+                    <div class="playlist-item-avatar">
+                      <div class="playlist-item-icon">
+                        <span class="material-icons-outlined"> clear </span>
+                        <span class="material-icons-outlined" id="play-icon">
+                          play_circle_outline
+                        </span>
+                        <span class="material-icons-outlined">
+                          more_horiz
+                        </span>
+                      </div>
+                      <img src="./image/cgn.jpg" alt="" />
+                    </div>
+                    <div class="info-playlist">
+                      <h3>Vương Anh Tú</h3>
+                    </div>
+                  </div>
+                  <div class="mv-item">
+                    <div class="playlist-item-avatar">
+                      <div class="playlist-item-icon">
+                        <span class="material-icons-outlined"> clear </span>
+                        <span class="material-icons-outlined" id="play-icon">
+                          play_circle_outline
+                        </span>
+                        <span class="material-icons-outlined">
+                          more_horiz
+                        </span>
+                      </div>
+                      <img src="./image/ccyld.jpg" alt="" />
+                    </div>
+                    <div class="info-playlist">
+                      <h3>Sơn Tùng MTP</h3>
+                    </div>
+                  </div>
+                  <div class="mv-item">
+                    <div class="playlist-item-avatar">
+                      <div class="playlist-item-icon">
+                        <span class="material-icons-outlined"> clear </span>
+                        <span class="material-icons-outlined" id="play-icon">
+                          play_circle_outline
+                        </span>
+                        <span class="material-icons-outlined">
+                          more_horiz
+                        </span>
+                      </div>
+                      <img src="./image/blackjack.jpg" alt="" />
+                    </div>
+                    <div class="info-playlist">
+                      <h3>Soobin, Binz</h3>
+                    </div>
+                  </div>
+                  <div class="mv-item">
+                    <div class="playlist-item-avatar">
+                      <div class="playlist-item-icon">
+                        <span class="material-icons-outlined"> clear </span>
+                        <span class="material-icons-outlined" id="play-icon">
+                          play_circle_outline
+                        </span>
+                        <span class="material-icons-outlined">
+                          more_horiz
+                        </span>
+                      </div>
+                      <img src="./image/bhdn.jpg" alt="" />
+                    </div>
+                    <div class="info-playlist">
+                      <h3>Quân AP</h3>
+                    </div>
+                  </div>
+                  <div class="mv-item" id="playlist-item">
+                    <div class="playlist-item-avatar">
+                      <div class="playlist-item-icon">
+                        <span class="material-icons-outlined"> clear </span>
+                        <span class="material-icons-outlined" id="play-icon">
+                          play_circle_outline
+                        </span>
+                        <span class="material-icons-outlined">
+                          more_horiz
+                        </span>
+                      </div>
+                      <img src="./image/miu-dalab.jpg" alt="" />
+                    </div>
+                    <div class="info-playlist">
+                      <h3>Da Lad, Miu Lê</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="disance"></div>
+              </div>
+            </div>
+          </div>
+          <div class="content-item active" id="content2">
+            <div class="advertisement">
+              <img src="./image/lazada.png" alt="" />
+            </div>
+            <div class="main-content">
+              <div class="mymusic-song">
+                <div class="mymusic-header">
+                  <h2>
+                    Bài hát<span class="material-icons-outlined">
+                      arrow_forward_ios
+                    </span>
+                  </h2>
+                  <div class="function-music">
+                    <div class="upload-music">
+                      <label class="upload" for="upload-photo">
+                        <span class="material-icons-outlined"> upload </span>Tải
+                        lên
+                        <input type="file" name="photo" id="upload-photo" />
+                      </label>
+                    </div>
+                    <div class="playall-music">
+                      <span class="material-icons-outlined"> play_arrow </span
+                      >Phát tất cả
+                    </div>
+                  </div>
+                </div>
+                <div class="song-list1">
+                  <div class="song-list-scroll">
+                    <ul class="song-menu">
+                      <li class="song-menu-item1">
+                        <div class="item1-icon">
+                          <span class="material-icons-outlined">
+                            audiotrack
+                          </span>
+                          <input type="checkbox" />
+                        </div>
+                        <div class="song-link">
+                          <div class="song-avatar1">
+                            <img
+                              src="https://i1.sndcdn.com/artworks-JbijBproIttdSoSF-sNvqVg-t500x500.jpg"
+                              alt=""
+                            />
+                            <div class="avatar-animetion">
+                              <span class="material-icons-outlined">
+                                play_circle_filled
+                              </span>
+                            </div>
+                            <div class="avatar-animetion1">
+                              <img src="./image/icon-playing.gif" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="song-info1">
+                          <h3>Tháng mấy em nhớ anh</h3>
+                          <p>Hà Anh Tuấn</p>
+                        </div>
+                        <div class="song-time">05:00</div>
+                        <div class="song-more1">
+                          <span class="material-icons-outlined">
+                            favorite_border
+                          </span>
+                          <span class="material-icons-outlined">
+                            more_horiz
+                          </span>
+                        </div>
+                      </li>
+                      <li class="song-menu-item1">
+                        <div class="item1-icon">
+                          <span class="material-icons-outlined">
+                            audiotrack
+                          </span>
+                          <input type="checkbox" />
+                        </div>
+                        <div class="song-link">
+                          <div class="song-avatar1">
+                            <img
+                              src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/4/a/d/0/4ad0fd203431fd51343b2d46d5029db0.jpg"
+                              alt=""
+                            />
+                            <div class="avatar-animetion">
+                              <span class="material-icons-outlined">
+                                play_circle_filled
+                              </span>
+                            </div>
+                            <div class="avatar-animetion1">
+                              <img src="./image/icon-playing.gif" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="song-info1">
+                          <h3>Ngày chưa giông bão</h3>
+                          <p>Bùi Lan Hương</p>
+                        </div>
+                        <div class="song-time">03:00</div>
+                        <div class="song-more1">
+                          <span class="material-icons-outlined">
+                            favorite_border
+                          </span>
+                          <span class="material-icons-outlined">
+                            more_horiz
+                          </span>
+                        </div>
+                      </li>
+                      <li class="song-menu-item1">
+                        <div class="item1-icon">
+                          <span class="material-icons-outlined">
+                            audiotrack
+                          </span>
+                          <input type="checkbox" />
+                        </div>
+                        <div class="song-link">
+                          <div class="song-avatar1">
+                            <img
+                              src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/f/4/b/e/f4be0685cad8734de407caa764392a34.jpg"
+                              alt=""
+                            />
+                            <div class="avatar-animetion">
+                              <span class="material-icons-outlined">
+                                play_circle_filled
+                              </span>
+                            </div>
+                            <div class="avatar-animetion1">
+                              <img src="./image/icon-playing.gif" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="song-info1">
+                          <h3>Huyền Thoại</h3>
+                          <p>Phan Mạnh Quỳnh</p>
+                        </div>
+                        <div class="song-time">04:30</div>
+                        <div class="song-more1">
+                          <span class="material-icons-outlined">
+                            favorite_border
+                          </span>
+                          <span class="material-icons-outlined">
+                            more_horiz
+                          </span>
+                        </div>
+                      </li>
+                      <li class="song-menu-item1">
+                        <div class="item1-icon">
+                          <span class="material-icons-outlined">
+                            audiotrack
+                          </span>
+                          <input type="checkbox" />
+                        </div>
+                        <div class="song-link">
+                          <div class="song-avatar1">
+                            <img
+                              src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/c/2/2/d/c22de29d498ba69b4624d1e20a778c05.jpg"
+                              alt=""
+                            />
+                            <div class="avatar-animetion">
+                              <span class="material-icons-outlined">
+                                play_circle_filled
+                              </span>
+                            </div>
+                            <div class="avatar-animetion1">
+                              <img src="./image/icon-playing.gif" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="song-info1">
+                          <h3>Có lẽ anh chưa từng</h3>
+                          <p>OnlyC, Karik</p>
+                        </div>
+                        <div class="song-time">04:55</div>
+                        <div class="song-more1">
+                          <span class="material-icons-outlined">
+                            favorite_border
+                          </span>
+                          <span class="material-icons-outlined">
+                            more_horiz
+                          </span>
+                        </div>
+                      </li>
+                      <li class="song-menu-item1">
+                        <div class="item1-icon">
+                          <span class="material-icons-outlined">
+                            audiotrack
+                          </span>
+                          <input type="checkbox" />
+                        </div>
+                        <div class="song-link">
+                          <div class="song-avatar1">
+                            <img
+                              src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/1/6/3/6/1636e1de7e52d7cf6822819da865fa0e.jpg"
+                              alt=""
+                            />
+                            <div class="avatar-animetion">
+                              <span class="material-icons-outlined">
+                                play_circle_filled
+                              </span>
+                            </div>
+                            <div class="avatar-animetion1">
+                              <img src="./image/icon-playing.gif" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="song-info1">
+                          <h3>Tháng mấy em nhớ anh</h3>
+                          <p>Hà Anh Tuấn</p>
+                        </div>
+                        <div class="song-time">05:00</div>
+                        <div class="song-more1">
+                          <span class="material-icons-outlined">
+                            favorite_border
+                          </span>
+                          <span class="material-icons-outlined">
+                            more_horiz
+                          </span>
+                        </div>
+                      </li>
+                      <li class="song-menu-item1">
+                        <div class="item1-icon">
+                          <span class="material-icons-outlined">
+                            audiotrack
+                          </span>
+                          <input type="checkbox" />
+                        </div>
+                        <div class="song-link">
+                          <div class="song-avatar1">
+                            <img
+                              src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/1/6/3/6/1636e1de7e52d7cf6822819da865fa0e.jpg"
+                              alt=""
+                            />
+                            <div class="avatar-animetion">
+                              <span class="material-icons-outlined">
+                                play_circle_filled
+                              </span>
+                            </div>
+                            <div class="avatar-animetion1">
+                              <img src="./image/icon-playing.gif" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="song-info1">
+                          <h3>Tháng mấy em nhớ anh</h3>
+                          <p>Hà Anh Tuấn</p>
+                        </div>
+                        <div class="song-time">05:00</div>
+                        <div class="song-more1">
+                          <span class="material-icons-outlined">
+                            favorite_border
+                          </span>
+                          <span class="material-icons-outlined">
+                            more_horiz
+                          </span>
+                        </div>
+                      </li>
+                      <li class="song-menu-item1">
+                        <div class="item1-icon">
+                          <span class="material-icons-outlined">
+                            audiotrack
+                          </span>
+                          <input type="checkbox" />
+                        </div>
+                        <div class="song-link">
+                          <div class="song-avatar1">
+                            <img
+                              src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/1/6/3/6/1636e1de7e52d7cf6822819da865fa0e.jpg"
+                              alt=""
+                            />
+                            <div class="avatar-animetion">
+                              <span class="material-icons-outlined">
+                                play_circle_filled
+                              </span>
+                            </div>
+                            <div class="avatar-animetion1">
+                              <img src="./image/icon-playing.gif" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="song-info1">
+                          <h3>Tháng mấy em nhớ anh</h3>
+                          <p>Hà Anh Tuấn</p>
+                        </div>
+                        <div class="song-time">05:00</div>
+                        <div class="song-more1">
+                          <span class="material-icons-outlined">
+                            favorite_border
+                          </span>
+                          <span class="material-icons-outlined">
+                            more_horiz
+                          </span>
+                        </div>
+                      </li>
+                      <li class="song-menu-item1">
+                        <div class="item1-icon">
+                          <span class="material-icons-outlined">
+                            audiotrack
+                          </span>
+                          <input type="checkbox" />
+                        </div>
+                        <div class="song-link">
+                          <div class="song-avatar1">
+                            <img
+                              src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/1/6/3/6/1636e1de7e52d7cf6822819da865fa0e.jpg"
+                              alt=""
+                            />
+                            <div class="avatar-animetion">
+                              <span class="material-icons-outlined">
+                                play_circle_filled
+                              </span>
+                            </div>
+                            <div class="avatar-animetion1">
+                              <img src="./image/icon-playing.gif" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="song-info1">
+                          <h3>Tháng mấy em nhớ anh</h3>
+                          <p>Hà Anh Tuấn</p>
+                        </div>
+                        <div class="song-time">05:00</div>
+                        <div class="song-more1">
+                          <span class="material-icons-outlined">
+                            favorite_border
+                          </span>
+                          <span class="material-icons-outlined">
+                            more_horiz
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="player-control">
+        <div class="control-ifomusic">
+          <div class="player-avatar">
+            <div
+              class="cd-thumb"
+              style="
+                background-image: url('https://o.vdoc.vn/data/image/2020/07/07/hinh-nen-son-tung-mtp-2.jpg');
+              "
+            ></div>
+          </div>
+          <div class="singer">
+            <h3>Có chắc yêu là đây</h3>
+            <p>Sơn tùng MTP</p>
+          </div>
+          <div id="playlist-item" class="like">
+            <div class="heart">
+              <span class="material-icons-outlined"> favorite_border </span>
+            </div>
+          </div>
+          <div id="playlist-item" class="more">
+            <span class="material-icons-outlined"> more_horiz </span>
+          </div>
+        </div>
+        <div class="remote-control">
+          <div class="remote">
+            <div class="shuffle">
+              <span class="material-icons-outlined"> shuffle </span>
+            </div>
+            <div class="skip-pre">
+              <span class="material-icons-outlined"> skip_previous </span>
+            </div>
+            <div class="play">
+              <span id="play" class="material-icons-outlined">
+                play_circle_outline
+              </span>
+              <span id="pause" class="material-icons-outlined"> pause </span>
+            </div>
+            <div class="skip-next">
+              <span class="material-icons-outlined"> skip_next </span>
+            </div>
+            <div class="repeat">
+              <span class="material-icons-outlined"> repeat </span>
+            </div>
+          </div>
+          <div class="audio">
+            <span class="start-music" id="playlist-item">0:00</span>
+            <input
+              id="progress"
+              class="progress"
+              type="range"
+              value="0"
+              step="1"
+              min="0"
+              max="100"
+            />
+            <span class="finish-music" id="playlist-item">3:14</span>
+            <audio id="audio" src=""></audio>
+          </div>
+        </div>
+        <div class="control-volume">
+          <div class="mv" id="playlist-item">
+            <span class="material-icons-outlined"> ondemand_video </span>
+          </div>
+          <div class="karaoke" id="playlist-item">
+            <span class="material-icons-outlined"> mic_external_on </span>
+          </div>
+          <div class="zoom" id="playlist-item">
+            <span class="material-icons-outlined"> center_focus_weak </span>
+          </div>
+          <div class="volume">
+            <span class="material-icons-outlined"> volume_up </span>
+            <input
+              id="progress1"
+              class="progress1"
+              type="range"
+              value="0"
+              step="1"
+              min="0"
+              max="100"
+            />
+          </div>
+          <div class="listplay" id="playlist-item">
+            <span class="material-icons-outlined"> queue_music </span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./javascript/main.js"></script>
+  </body>
+</html>
